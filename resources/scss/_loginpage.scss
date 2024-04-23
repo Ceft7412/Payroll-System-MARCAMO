@@ -1,0 +1,164 @@
+.container {
+    background-image: url("../assets/imgs/headerphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+
+    .login-topbar {
+        background-color: rgba(255, 255, 255, 0.103);
+        left: 0;
+        top: 0;
+        right: 0;
+        position: fixed;
+        height: 70px;
+        padding: 10px;
+
+        .topbar-flex {
+
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .topbar-logo {
+                a {
+                    img {
+                        width: auto;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .login-content {
+        padding-top: 90px;
+
+        .login-content-flex {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+
+
+                .login-intro {
+                    text-align: center;
+                    background: linear-gradient(to right,
+                            white,
+                            violet,
+                            orange,
+                            white);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+
+                .login-wrapper {
+                    background: white;
+                    border-radius: 5px;
+                    align-self: center;
+                    width: 80%;
+
+                    .login-form-flex {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 20px;
+
+                        .form-header {
+                            h2 {
+                                font-family: 'Courier New', Courier, monospace;
+                            }
+                        }
+
+                        .login-form {
+
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+
+                            .username-password {
+
+                                flex-grow: 1;
+                                padding: 10px;
+
+                                .input-container {
+
+                                    input {
+                                        margin-top: 10px;
+                                        margin-bottom: 10px;
+                                        padding: 5px;
+                                        border: none;
+                                        border-bottom: 1px solid grey;
+                                        width: 100%;
+                                        box-sizing: border-box;
+                                        outline: none;
+                                        font-size: 15px;
+                                    }
+
+                                }
+                            }
+
+                            span {
+                                align-self: center;
+                                color: grey;
+                            }
+
+                            .signin-button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                button {
+                                    padding: 10px 15px 10px 15px;
+                                    border-radius: 20px;
+                                    width: 90px;
+                                    border: 1px solid #0ba6ff;
+                                    background-color: #0ba6ff;
+                                    color: white;
+                                    display: block;
+                                    margin: 10px;
+                                }
+
+                                button:hover {
+                                    background-color: #0b89ff;
+                                    cursor: pointer;
+                                    scale: 1.10;
+                                }
+
+                            }
+
+
+                        }
+
+                        .form-footer {
+                            padding: 10px;
+                            padding-bottom: 0;
+                            border-top: 1px solid grey;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            span {
+                                color: grey;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
+}

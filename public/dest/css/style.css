@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "fonts";
+  src: url("/assets/fonts/ProductSans-Regular.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fonts";
+}
+
+.container {
+  background-image: url("../assets/imgs/headerphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+}
+.container .login-topbar {
+  background-color: rgba(255, 255, 255, 0.103);
+  left: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  height: 70px;
+  padding: 10px;
+}
+.container .login-topbar .topbar-flex {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .login-topbar .topbar-flex .topbar-logo a img {
+  width: auto;
+  height: 80px;
+}
+.container .login-content {
+  padding-top: 90px;
+}
+.container .login-content .login-content-flex {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.container .login-content .login-content-flex .card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.container .login-content .login-content-flex .card .login-intro {
+  text-align: center;
+  background: linear-gradient(to right, white, violet, orange, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.container .login-content .login-content-flex .card .login-wrapper {
+  background: white;
+  border-radius: 5px;
+  align-self: center;
+  width: 80%;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .form-header h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .login-form .username-password {
+  flex-grow: 1;
+  padding: 10px;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .login-form .username-password .input-container input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 15px;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .login-form span {
+  align-self: center;
+  color: grey;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .login-form .signin-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .login-form .signin-button button {
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  width: 90px;
+  border: 1px solid #0ba6ff;
+  background-color: #0ba6ff;
+  color: white;
+  display: block;
+  margin: 10px;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .login-form .signin-button button:hover {
+  background-color: #0b89ff;
+  cursor: pointer;
+  scale: 1.1;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .form-footer {
+  padding: 10px;
+  padding-bottom: 0;
+  border-top: 1px solid grey;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .login-content .login-content-flex .card .login-wrapper .login-form-flex .form-footer span {
+  color: grey;
+}
+
+.register-container {
+  padding: 10px;
+  background-image: url("../assets/imgs/headerphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-container .register-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(194, 194, 194);
+  width: 570px;
+}
+.register-container .register-wrapper .register-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+.register-container .register-wrapper .register-header .brand a img {
+  width: 150px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px 0 10px 0;
+}
+.register-container .register-wrapper .register-header .or {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.register-container .register-wrapper .register-body {
+  padding: 20px 30px;
+}
+.register-container .register-wrapper .register-body .register-flex-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 {
+  display: flex;
+  gap: 15px;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .input input,
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .input select {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .buttons button {
+  height: 35px;
+  border-radius: 7px;
+  border: none;
+  font-size: 16px;
+  color: black;
+  width: 20%;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .buttons a {
+  width: 20%;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .buttons button:nth-child(1) {
+  border: 1px solid grey;
+  width: 100%;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .buttons button:nth-child(1):hover {
+  cursor: pointer;
+  background-color: rgb(231, 231, 231);
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .buttons button:nth-child(2) {
+  background-color: rgb(202, 202, 202);
+  border: 1px solid grey;
+}
+.register-container .register-wrapper .register-body .register-flex-body form .item1 .buttons button:nth-child(2):hover {
+  background-color: rgb(186, 186, 186);
+  cursor: pointer;
+}
+
+@media (max-width: 300px) {
+  .register-container {
+    min-width: 500px;
+  }
+}/*# sourceMappingURL=style.css.map */
